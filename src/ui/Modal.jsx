@@ -79,6 +79,7 @@ function Window({ children, name }) {
   const ref = useOutsideClick(close);
 
   if (name !== openName) return null;
+  console.log("opened");
 
   return createPortal(
     <Overlay>
